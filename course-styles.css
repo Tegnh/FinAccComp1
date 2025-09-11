@@ -1,0 +1,149 @@
+/* Course Hero Section */
+.course-hero {
+    background: linear-gradient(to bottom, var(--primary-color-dark), var(--primary-color));
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.course-header-content .course-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.course-header-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-header-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Course Content Section */
+.course-content {
+    padding: 50px 0;
+}
+
+/* Accordion Styles */
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    text-align: right;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.accordion-header::before {
+    content: '\f078'; /* FontAwesome down arrow */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.accordion-item[open] > .accordion-header::before {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.accordion-header:hover {
+    background-color: #f0f0f0;
+}
+
+.accordion-content {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.accordion-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.accordion-content .btn-secondary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.accordion-content .btn-secondary:hover {
+    background-color: #00695c;
+}
+
+.accordion-content .btn-secondary i {
+    margin-right: 8px;
+}
+
+/* Q&A Section */
+.qa-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.qa-section h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color-dark);
+    margin-bottom: 15px;
+}
+
+.qa-item {
+    margin-bottom: 15px;
+}
+
+.qa-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.qa-item p {
+    margin: 0;
+    padding-right: 15px;
+    border-right: 3px solid var(--accent-color);
+}
+
+.accordion-placeholder {
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+    color: #777;
+}
